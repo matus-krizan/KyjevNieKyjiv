@@ -3,7 +3,7 @@
   "description": "V slovencine je slovo Kyjev od roku 1902",
   "version": "1.0",
   "manifest_version": 3,
-  "author": "Nech vam uz nejebe",
+  "icons": {"128": "128.png"},
   
   "content_scripts":
   [
@@ -11,7 +11,7 @@
 		"matches": ["https://dennikn.sk/*"],
 		"all_frames": true,
 		"js": ["content_script.js"],
-		"run_at": "document_end"
+		"run_at": "document_idle"
 	}
   ]
 
